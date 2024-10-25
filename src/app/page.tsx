@@ -1,4 +1,3 @@
-import styles from "./page.module.css";
 import Skill from "./components/Skill";
 import Projects from "./components/Projects";
 import Email from "./components/Email";
