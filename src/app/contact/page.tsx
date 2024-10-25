@@ -1,14 +1,15 @@
-import Email from "../components/Email";
+import Email from "../components/Email/Email";
+import styles from "../contact/contact.module.css"
 function Page() {
   return (
 
-    <section className="contactParent ">
+    <section className={styles.contactParent}>
     
       <form
         action="https://api.web3forms.com/submit"
         method="POST"
       >
-        <div className="NameEmailinputParent ">
+        <div className={styles.NameEmailinputParent}>
           <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
           <input
             type="text"
@@ -26,6 +27,7 @@ function Page() {
           <textarea
             name="subject"
             placeholder="Subject"
+            className={styles.textarea}
             required
           ></textarea>
         </div>
@@ -34,16 +36,17 @@ function Page() {
           <textarea
             name="message"
             placeholder="Message"
+            className={styles.textarea}
             required
           ></textarea>
         </div>
 
         <div>
           <button>
-            <span className="submitBtnText ">
+            <span className={styles.submitBtnText}>
               Submit
             </span>
-            <span className="contactBtnSpanWhite"></span>
+            <span className={styles.contactBtnSpanWhite}></span>
           </button>
         </div>
       </form>

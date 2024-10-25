@@ -1,0 +1,29 @@
+.EmailParent {
+  background-color: #202426;
+  padding: 30px;
+  margin-top: 40px;
+}
+.letsTalk {
+  color: #868381;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.emailText {
+  text-align: center;
+  color: white;
+  font-size: 2vw;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+@media (max-width: 1359px) {
+  .EmailParent {
+    margin-top: 80px;
+  }
+  .letsTalk {
+    font-size: 5vw;
+  }
+  .emailText {
+    font: 5vw sans-serif;
+  }
+}

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import styles from "../NavBar/navbar.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -16,69 +17,55 @@ function NavBar() {
   };
 
   return (
-    <nav className="">
+    <nav className={styles.nav}>
       {/* NAV LINKS */}
       <div
-        className={`navLinkParent ${
+        className={`${styles.navLinkParent} ${
           isHamburger
-            ?"hamburgerClickNavLink "
-            : "hamburgerNotClick "
+            ? `${styles.hamburgerClickNavLink}`
+            : `${styles.hamburgerNotClick} `
         }`}
       >
         <Link
           href="/"
           onClick={closeMenu}
-          className={`navLinks ${
-            pathname === "/"
-              ? "active "
-              : ""
-          }`}
+          className={`${styles.navLinks} ${pathname === "/" ? `${styles.active}` : ""}`}
         >
           Work
         </Link>
         <Link
           href="/about"
           onClick={closeMenu}
-          className={`navLinks ${
-            pathname === "/about"
-              ? "active "
-              : ""
-          }`}
+          className={`${styles.navLinks} ${pathname === "/about" ?`${styles.active}` : ""}`}
         >
           About
         </Link>
         <Link
           href="/contact"
           onClick={closeMenu}
-          className={`navLinks  ${
-            pathname === "/contact"
-              ? "active"
-              : ""
-          }`}
+          className={`${styles.navLinks}  ${pathname === "/contact" ? `${styles.active}`: ""}`}
         >
           Contact
         </Link>
       </div>
 
       {/* NAV CENTER HEADING */}
-      <div className="NavHeading">
-        <h1 >
+      <div className={styles.NavHeading}>
+        <h1>
           Subhan<span>.</span>
         </h1>
       </div>
 
       {/* SOCIAL LINKS AND NAV BUTTON */}
       <div
-        className={`socialLinksworkbuttonParent  ${
-          isHamburger
-            ? "hamburgerClick "
-            : "hamburgerNotClick "
+        className={`${styles.socialLinksworkbuttonParent}  ${
+          isHamburger ? `${styles.hamburgerClick} ` : `${styles.hamburgerNotClick} `
         }`}
       >
         {/* SOCIAL LINKS */}
-        <div className={`socialLinksParent`}>
+        <div className={`${styles.socialLinksParent}`}>
           {/* LINKEDIN ICON */}
-          <Link href="/" className="socialIcon">
+          <Link href="/" className={styles.socialIcon}>
             <svg
               viewBox="0 0 24 24"
               fill="black"
@@ -93,7 +80,7 @@ function NavBar() {
           </Link>
 
           {/* INSTAGRAM ICON */}
-          <Link href="/" className="socialIcon">
+          <Link href="/" className={styles.socialIcon}>
             <svg
               viewBox="0 0 24 24"
               fill="none"
@@ -109,7 +96,7 @@ function NavBar() {
           </Link>
 
           {/* GITHUB ICON */}
-          <Link href="https://github.com/AbduSubhan11" className="socialIcon">
+          <Link href="https://github.com/AbduSubhan11" className={styles.socialIcon}>
             <svg
               width="24"
               height="24"
@@ -128,32 +115,18 @@ function NavBar() {
         </div>
 
         {/* NAV WORK BUTTON */}
-        <Link href="/contact" onClick={closeMenu} className="workButton">
-          <span className="workbtntext">Let&apos;s Work Together</span>
-          <span className="workbtnbg"></span>
+        <Link href="/contact" onClick={closeMenu} className={`${styles.workButton}`}>
+          <span className={`${styles.workbtntext}`}>Let&apos;s Work Together</span>
+          <span className={`${styles.workbtnbg}`}></span>
         </Link>
       </div>
 
       {/* HAMBURGER */}
-      <div className="hamburgerParent">
-        <button
-          onClick={hamburHandler}
-        >
-          <span
-            className={` ${
-              isHamburger ? "hamburspan1 " : ""
-            }`}
-          ></span>
-          <span
-            className={` ${
-              isHamburger ? "hamburspan2 " : ""
-            }`}
-          ></span>
-          <span
-            className={` ${
-              isHamburger ? "hamburspan3 " : ""
-            }`}
-          ></span>
+      <div className={`${styles.hamburgerParent}`}>
+        <button onClick={hamburHandler}>
+          <span className={` ${isHamburger ? `${styles.hamburspan1}` : ""}`}></span>
+          <span className={` ${isHamburger ? `${styles.hamburspan2}` : ""}`}></span>
+          <span className={` ${isHamburger ? `${styles.hamburspan3}` : ""}`}></span>
         </button>
       </div>
     </nav>

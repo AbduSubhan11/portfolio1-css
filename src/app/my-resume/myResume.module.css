@@ -1,0 +1,62 @@
+.myResumeImage {
+    padding: 50px 0px;
+    width: 100%;
+    height: 50%;
+  }
+  .myResumeTextParent {
+    padding: 30px;
+  }
+  .myResumeTextPara1 {
+    color: gray;
+    margin-top: 12px;
+    font-size: 18px;
+  }
+  .myResumeFeaturHead {
+    margin-top: 20px;
+  }
+  .myResumeTextParent ul {
+    color: gray;
+    font-size: 20px;
+    margin-top: 12px;
+    padding: 0px 20px;
+  }
+  .myResumeTextParent ul li {
+    margin-top: 10px;
+  }
+  .myResumeTextParent strong {
+    color: #4b5563;
+  }
+  .myResumeTextPara2 {
+    color: #4b5563;
+    margin-top: 14px;
+    font-size: 20px;
+  }
+  .myResumePara3 {
+    color: gray;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .myResumeStart {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .myResumeVisitLink {
+    text-decoration: none;
+    color: blue;
+    font-weight: 700;
+  }
+  .myResumeFreelanceHead {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+  
+  @media (max-width: 1359px) {
+    .myResumeImage {
+      width: 100%;
+      height: 50vw;
+    }
+    .myResumeTextParent {
+      padding: 20px;
+    }
+  }
+  

@@ -1,0 +1,43 @@
+.skillParent {
+  color: white;
+  background-color: #202426;
+  height: 180px;
+  overflow: hidden;
+  margin-top: 100px;
+  min-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.skillParent h1 {
+  color: #b9b2ae;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.skillAnimatedText {
+  padding: 42px;
+  font-size: 30px;
+  margin-top: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+  animation: slide 20s linear infinite;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
+
+@media (max-width: 1359) {
+  .skillAnimatedText {
+    padding: 20px;
+  }
+  .skillParent {
+    height: 150px;
+  }
+  .skillParent h1 {
+    font-size: 5vw;
+  }
+}

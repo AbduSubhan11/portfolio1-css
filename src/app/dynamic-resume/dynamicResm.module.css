@@ -1,0 +1,59 @@
+.dynamicResumeImage {
+  padding: 50px 0px;
+  width: 100%;
+  height: 50%;
+}
+.dynamicResumeTextParent {
+  padding: 30px;
+}
+.dynamicResumePara1 {
+  color: gray;
+  margin-top: 12px;
+  font-size: 18px;
+}
+.dynamicResumeFeaturHead {
+  margin-top: 20px;
+}
+.dynamicResumeTextParent ul {
+  color: gray;
+  font-size: 20px;
+  margin-top: 12px;
+  padding: 0px 20px;
+}
+.dynamicResumeTextParent ul li {
+  margin-top: 10px;
+}
+.dynamicResumeTextParent strong {
+  color: #4b5563;
+}
+.dynamicResumePara2 {
+  color: #4b5563;
+  margin-top: 14px;
+  font-size: 20px;
+}
+.dynamicResumePara3 {
+  color: gray;
+  margin-top: 10px;
+  font-size: 20px;
+}
+.dynamicResumeHowWork {
+  margin-top: 12px;
+}
+.dynamicResumeStart {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.dynamicResumeVisitLink {
+  text-decoration: none;
+  color: blue;
+  font-weight: 700;
+}
+@media (max-width: 1359px) {
+  .dynamicResumeImage {
+    width: 100%;
+    height: 50vw;
+  }
+  .dynamicResumeTextParent {
+    padding: 20px;
+  }
+}

@@ -1,22 +1,23 @@
 import Link from "next/link";
+import styles from "../dynamic-resume/dynamicResm.module.css"
 import dynamic from "../../../public/Images/dynamic.png";
 import Image from "next/image";
 
 function page() {
   return (
     <div>
-      <Image src={dynamic} alt="dynamic-resume" className="dynamicResumeImage "></Image>
-      <div className="dynamicResumeTextParent ">
+      <Image src={dynamic} alt="dynamic-resume" className={styles.dynamicResumeImage}></Image>
+      <div className={styles.dynamicResumeTextParent}>
         <h1 >
           Dynamic Resume Builder
         </h1>
-        <p className="dynamicResumePara1 ">
+        <p className={styles.dynamicResumePara1}>
           Create your personalized resume effortlessly! Simply fill out the form
           with your personal information, skills, and experience, and instantly
           generate a professionally designed resume tailored to your input.
         </p>
 
-        <h2 className="dynamicResumeFeaturHead">
+        <h2 className={styles.dynamicResumeFeaturHead}>
           Key Features
         </h2>
         <ul >
@@ -39,10 +40,10 @@ function page() {
           </li>
         </ul>
 
-        <h3 className="dynamicResumeHowWork ">
+        <h3 className={styles.dynamicResumeHowWork}>
           How It Works
         </h3>
-        <p className="dynamicResumePara2 ">
+        <p className={styles.dynamicResumePara2}>
           1. Fill out the form with your personal details (name, contact info,
           skills, work experience, education).
           <br />
@@ -54,20 +55,20 @@ function page() {
           sharing it with potential employers!
         </p>
 
-        <h3 className="dynamicResumeStart ">
+        <h3 className={styles.dynamicResumeStart}>
           Start Building Your Resume
         </h3>
-        <p className="dynamicResumePara3 ">
+        <p className={styles.dynamicResumePara3}>
           Ready to create your resume? Fill out the form below to get started.
           Your resume will update dynamically based on the information you
           provide.
         </p>
 
-        <div className="dynamicResumeStart ">
+        <div className={styles.dynamicResumeStart}>
             visit platform
           <Link
             href="https://subhan-dynamic-resume.netlify.app/"
-            className="dynamicResumeVisitLink "
+            className={styles.dynamicResumeVisitLink}
           >
             &nbsp;Here
           </Link>

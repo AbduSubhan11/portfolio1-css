@@ -1,0 +1,67 @@
+.aboutUpper {
+  background-color: #202426;
+  height: 70px;
+  padding: 30px 70px;
+  color: white;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.aboutImageParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 60px;
+}
+.aboutImage1 {
+  margin-right: 100px;
+}
+.aboutImage1,
+.aboutImage3 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.aboutImage2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+.aboutTextParent {
+  padding: 40px 200px;
+  text-align: center;
+}
+.aboutTextParent h1 {
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.aboutTextParent h3 {
+  font-weight: 100;
+  margin-top: 12px;
+}
+@media (max-width: 1359px) {
+  .aboutUpper {
+    font-size: 2.5vw;
+    padding: 20px;
+    height: 80px;
+  }
+  .aboutImage1,
+  .aboutImage3 {
+    width: 100px;
+    height: 100px;
+  }
+  .aboutImage2 {
+    width: 150px;
+    height: 150px;
+    margin-left: 0px;
+  }
+  .aboutTextParent {
+    padding: 40px 30px;
+  }
+  .aboutTextParent h3 {
+    font-size: 5vw;
+    margin-top: 25px;
+  }
+}

@@ -1,0 +1,59 @@
+.ecommerceImage {
+  padding: 50px 0px;
+  width: 100%;
+  height: 50%;
+}
+.ecommerceTextParent {
+  padding: 30px;
+}
+.ecommercePara1 {
+  color: gray;
+  margin-top: 12px;
+  font-size: 18px;
+}
+.ecommerceFeaturHead {
+  margin-top: 20px;
+}
+.ecommerceTextParent ul {
+  color: gray;
+  font-size: 20px;
+  margin-top: 12px;
+  padding: 0px 20px;
+}
+.ecommerceTextParent ul li {
+  margin-top: 10px;
+}
+.ecommerceTextParent strong {
+  color: #4b5563;
+}
+.ecommercePara2 {
+  color: #4b5563;
+  margin-top: 14px;
+  font-size: 20px;
+}
+.ecommercePara3 {
+  color: gray;
+  margin-top: 10px;
+  font-size: 20px;
+}
+.ecommerceHowWork {
+  margin-top: 12px;
+}
+.ecommerceStartShopping {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.ecommerceVisitLink {
+  text-decoration: none;
+  color: blue;
+  font-weight: 700;
+}
+@media (max-width: 1359px) {
+  .ecommerceImage {
+    width: 100%;
+    height: 50vw;
+  }
+  .ecommerceTextParent {
+    padding: 20px;
+  }
+}

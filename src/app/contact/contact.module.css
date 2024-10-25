@@ -1,0 +1,75 @@
+.contactParent {
+  color: #202426;
+  padding: 40px 0px;
+}
+.NameEmailinputParent {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.contactParent form {
+  padding: 100px;
+}
+.contactParent input,
+.textarea {
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+  padding-left: 5px;
+  height: 50px;
+  background-color: transparent;
+  color: black;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.contactParent .textarea {
+  width: 100%;
+  margin-top: 50px;
+}
+.contactParent button {
+  position: relative;
+  padding: 10px 35px;
+  color: white;
+  background-color: #202426;
+  border: 2px solid black;
+  border-radius: 30px;
+  margin-top: 15px;
+  overflow: hidden;
+  text-decoration: none;
+}
+.submitBtnText {
+  position: relative;
+  z-index: 10;
+  transition: color 0.3s ease;
+}
+.contactBtnSpanWhite {
+  position: absolute;
+  inset: 0;
+  background-color: white;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.3s ease;
+  z-index: 0;
+}
+.contactParent button:hover {
+  color: #202426;
+  cursor: pointer;
+}
+.contactParent button:hover .contactBtnSpanWhite {
+  transform: scaleY(1);
+}
+@media (max-width:1359px) {
+  .contactParent form{
+    padding: 15px;
+  }
+  .contactParent input{
+    margin-top: 20px;
+  }
+  .NameEmailinputParent{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .contactParent button{
+    padding: 15px 45px;
+  }
+}

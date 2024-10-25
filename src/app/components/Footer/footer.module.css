@@ -1,0 +1,61 @@
+.footer {
+  display: flex;
+  margin: 40px;
+  padding: 20px 0px;
+  border-bottom: 1px solid black;
+  font-size: 1vw;
+  gap: 40px;
+  margin: 80px;
+  color: #202426;
+}
+.pagesSection h1,
+.connectSection h1 {
+  color: #868381;
+  font-size: 1.7vw;
+  font-weight: 800;
+}
+.PagesLinks,
+.ConnectLinks {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.PagesLink1,
+.PagesLink2,
+.ConnectLink1,
+.ConnectLink2,
+.ConnectLink3 {
+  text-decoration: none;
+  color: #202426;
+  font-size: 1.5vw;
+}
+.PagesLink1:hover,
+.PagesLink2:hover,
+.ConnectLink1:hover,
+.ConnectLink2:hover,
+.ConnectLink3:hover,
+.ConnectLink4:hover {
+  text-decoration: underline;
+}
+.footerName {
+  color: #202426;
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+@media (max-width: 1359px) {
+  .footer {
+    margin: 30px;
+  }
+  .pagesSection h1,
+  .connectSection h1 {
+    font-size: 5vw;
+  }
+  .PagesLink1,
+  .PagesLink2,
+  .ConnectLink1,
+  .ConnectLink2,
+  .ConnectLink3 {
+    font-size: 4.5vw;
+  }
+}

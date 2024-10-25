@@ -1,0 +1,60 @@
+.expenseTrackImage {
+  padding: 50px 0px;
+  width: 100%;
+  height: 50%;
+}
+.expenseTrackTextParent {
+  padding: 30px;
+}
+.expenseTrackPara1 {
+  color: gray;
+  margin-top: 12px;
+  font-size: 18px;
+}
+.expenseTrackFeaturHead {
+  margin-top: 20px;
+}
+.expenseTrackTextParent ul {
+  color: gray;
+  font-size: 20px;
+  margin-top: 12px;
+  padding: 0px 20px;
+}
+.expenseTrackTextParent ul li {
+  margin-top: 10px;
+}
+.expenseTrackTextParent strong {
+  color: #4b5563;
+}
+.expenseTrackPara2 {
+  color: #4b5563;
+  margin-top: 14px;
+  font-size: 20px;
+}
+.expenseTrackPara3 {
+  color: gray;
+  margin-top: 10px;
+  font-size: 20px;
+}
+.expenseTrackHowwork {
+  margin-top: 12px;
+}
+.expenseTrackStart {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.expenseTrackVisitLink {
+  text-decoration: none;
+  color: blue;
+  font-weight: 700;
+}
+
+@media (max-width: 1359px) {
+  .expenseTrackImage {
+    width: 100%;
+    height: 50vw;
+  }
+  .expenseTrackTextParent {
+    padding: 20px;
+  }
+}

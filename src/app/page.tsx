@@ -1,6 +1,6 @@
-import Skill from "./components/Skill";
-import Projects from "./components/Projects";
-import Email from "./components/Email";
+import Skill from "./components/Skill/Skill";
+import Projects from "./components/Projects/Projects";
+import Email from "./components/Email/Email";
 
 export default function Home() {
   return (

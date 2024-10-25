@@ -1,0 +1,38 @@
+.myProjectHead {
+  text-align: center;
+  color: #bfb2b5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 70px;
+}
+.ProjectsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 80px;
+  padding: 60px 80px;
+}
+.ProjectsGrid h1 {
+  margin-top: 10px;
+  color: #202426;
+}
+.ProjectImg {
+  width: 100%;
+  height: 100%;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
+}
+.ProjectImg:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
+@media (max-width: 1359px) {
+  .ProjectsGrid {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 25px;
+    padding: 10px;
+  }
+  .ProjectImg {
+    width: 100%;
+    height: 100%;
+  }
+}

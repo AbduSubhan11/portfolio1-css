@@ -1,22 +1,23 @@
 import Link from "next/link";
+import styles from "../Footer/footer.module.css"
 
 function Footer() {
   return (
     <>
-      <footer >
+      <footer className={styles.footer} >
         {/* PAGES */}
-        <div className="pagesSection ">
+        <div className={styles.pagesSection}>
           <h1>PAGES</h1>
-          <div className="PagesLinks ">
+          <div className={styles.PagesLinks}>
             <Link
               href="/"
-              className="PagesLink1 "
+              className={styles.PagesLink1}
             >
               Work
             </Link>
             <Link
               href="/contact"
-              className="PagesLink2 "
+              className={styles.PagesLink2}
             >
               Contact
             </Link>
@@ -24,23 +25,23 @@ function Footer() {
         </div>
 
         {/* CONNECT */}
-        <div className="connectSection ">
+        <div className={styles.connectSection}>
           <h1>CONNECT</h1>
-          <div className="ConnectLinks ">
+          <div className={styles.ConnectLinks}>
             <Link
               href="https://github.com/AbduSubhan11"
-              className="ConnectLink1"
+              className={styles.ConnectLink1}
             >
               ↗
               <span >GitHub</span>
             </Link>
-            <Link href="/" className="ConnectLink2">
+            <Link href="/" className={styles.ConnectLink2}>
               ↗
               <span >
                 Linkedin
               </span>
             </Link>
-            <Link href="/" className="ConnectLink3">
+            <Link href="/" className={styles.ConnectLink3}>
               ↗
               <span >
                 Instagram
@@ -49,7 +50,7 @@ function Footer() {
           </div>
         </div>
       </footer>
-      <h1 className="footerName">© SUBHAN ALL RIGHTS RESERVED</h1>
+      <h1 className={styles.footerName}>© SUBHAN ALL RIGHTS RESERVED</h1>
     </>
   );
 }

@@ -1,0 +1,152 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 20;
+  padding: 20px 25px;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid gainsboro;
+  color: #202426;
+  background-color: #f4f4f4;
+}
+.navLinkParent {
+  padding-left: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+.navLinks {
+  margin: 0px 12px;
+  text-decoration: none;
+  color: #202426;
+  font-weight: 700;
+}
+.hamburgerClickNavLink {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: fixed;
+  font-size: 5vw;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 50%;
+  padding-top: 150px;
+  border: 1px;
+  background-color: #f4f4f4;
+}
+.hamburgerClick {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  font-size: 3vw;
+  right: 10px;
+  top: 400px;
+  border: 1px;
+}
+.navLinks:hover {
+  text-decoration: underline;
+}
+.active {
+  color: #ff5a13;
+  text-decoration: underline;
+}
+.NavHeading h1 {
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3vw;
+}
+.NavHeading span {
+  color: #ff5a13;
+}
+.socialLinksworkbuttonParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 12px;
+}
+.socialLinksParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.socialIcon {
+  width: 2vw;
+  color: #202426;
+}
+.workButton {
+  position: relative;
+  padding: 10px 20px;
+  color: white;
+  background-color: #202426;
+  border: 2px solid black;
+  border-radius: 30px;
+  overflow: hidden;
+  text-decoration: none;
+}
+.workbtntext {
+  position: relative;
+  z-index: 10;
+  transition: color 0.3s ease;
+}
+.workbtnbg {
+  position: absolute;
+  inset: 0;
+  background-color: white;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.3s ease;
+  z-index: 0;
+}
+.workButton:hover {
+  color: #202426;
+}
+.workButton:hover .workbtnbg {
+  transform: scaleY(1);
+}
+.hamburgerParent {
+  z-index: 20;
+  display: none;
+}
+.hamburgerParent button {
+  background-color: #f4f4f4;
+  border: none;
+}
+.hamburgerParent span {
+  display: flex;
+  z-index: 40;
+  flex-direction: column;
+  height: 5px;
+  width: 30px;
+  margin-top: 5px;
+  background-color: black;
+  transition: transform 0.3 ease-in-out;
+}
+.hamburspan1 {
+  transform: translateY(1px) rotate(45deg);
+}
+.hamburspan2 {
+  opacity: 0;
+}
+.hamburspan3 {
+  transform: translateY(-20px) rotate(-45deg);
+}
+@media (max-width: 1369px) {
+  .NavHeading h1 {
+    font-size: 8vw;
+  }
+  .navLinks {
+    margin-top: 12px;
+  }
+  .socialIcon {
+    width: 5vw;
+  }
+  .hamburgerNotClick {
+    display: none;
+  }
+  .hamburgerParent {
+    display: block;
+  }
+}
