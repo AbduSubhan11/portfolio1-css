@@ -5,44 +5,44 @@ import Image from "next/image";
 function page() {
   return (
     <div>
-      <Image src={dynamic} alt="dynamic-resume" className="dynamicResumeImage md:p-20 p-8 "></Image>
-      <div className="dynamicResumeTextParent p-5">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">
+      <Image src={dynamic} alt="dynamic-resume" className="dynamicResumeImage "></Image>
+      <div className="dynamicResumeTextParent ">
+        <h1 >
           Dynamic Resume Builder
         </h1>
-        <p className="dynamicResumePara1 text-gray-600 mb-6">
+        <p className="dynamicResumePara1 ">
           Create your personalized resume effortlessly! Simply fill out the form
           with your personal information, skills, and experience, and instantly
           generate a professionally designed resume tailored to your input.
         </p>
 
-        <h2 className="dynamicResumeFeaturHead text-2xl font-semibold text-gray-800 mb-4">
+        <h2 className="dynamicResumeFeaturHead">
           Key Features
         </h2>
-        <ul className="list-disc list-inside text-gray-600 mb-6">
-          <li className="mb-2">
+        <ul >
+          <li >
             <strong>Form-Based Input:</strong> Users can enter their personal
             details, skills, education, and work experience.
           </li>
-          <li className="mb-2">
+          <li >
             <strong>Real-Time Preview:</strong> See your resume update as you
             fill out the form, ensuring everything looks perfect before
             downloading.
           </li>
-          <li className="mb-2">
+          <li >
             <strong>Customization Options:</strong> Choose from a range of
             templates, colors, and layouts to personalize your resume.
           </li>
-          <li className="mb-2">
+          <li >
             <strong>Download and Share:</strong> Generate a downloadable PDF of
             your resume, ready to be shared with employers or recruiters.
           </li>
         </ul>
 
-        <h3 className="dynamicResumeHowWork text-lg font-semibold text-gray-800 mb-4">
+        <h3 className="dynamicResumeHowWork ">
           How It Works
         </h3>
-        <p className="dynamicResumePara2 text-gray-600 mb-4">
+        <p className="dynamicResumePara2 ">
           1. Fill out the form with your personal details (name, contact info,
           skills, work experience, education).
           <br />
@@ -54,20 +54,20 @@ function page() {
           sharing it with potential employers!
         </p>
 
-        <h3 className="dynamicResumeStart text-lg font-semibold text-gray-800 mb-4">
+        <h3 className="dynamicResumeStart ">
           Start Building Your Resume
         </h3>
-        <p className="dynamicResumePara3 text-gray-600 mb-4">
+        <p className="dynamicResumePara3 ">
           Ready to create your resume? Fill out the form below to get started.
           Your resume will update dynamically based on the information you
           provide.
         </p>
 
-        <div className="dynamicResumeStart mt-6">
+        <div className="dynamicResumeStart ">
             visit platform
           <Link
             href="https://subhan-dynamic-resume.netlify.app/"
-            className="dynamicResumeVisitLink text-blue-500 hover:underline font-bold"
+            className="dynamicResumeVisitLink "
           >
             &nbsp;Here
           </Link>

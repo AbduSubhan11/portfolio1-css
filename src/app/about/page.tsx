@@ -6,9 +6,9 @@ import Skill from "../components/Skill";
 
 function Page() {
   return (
-    <section className="space-y-20">
+    <section >
       <div className="aboutUpper ">
-        <h1 className="text-center text-white md:text-3xl font-semibold">
+        <h1 >
           My name is Subhan, I’m a Frontend Developer. I create engaging,
           responsive websites and web applications, ensuring seamless user
           experiences across all devices.
@@ -16,26 +16,26 @@ function Page() {
       </div>
 
       {/* 3 PICS AND TEXT */}
-      <div className="space-y-10">
-        <div className="aboutImageParent flex justify-center items-center relative md:gap-x-36 gap-x-24">
+      <div>
+        <div className="aboutImageParent ">
           <Image
             src={img1}
             alt="img1"
-            className="aboutImage1 md:w-40 w-20 md:h-36 h-20 rounded-[50%]"
+            className="aboutImage1 "
           />
           <Image
             src={img2}
             alt="img2"
-            className="aboutImage2 md:w-56 w-36 md:h-56 h-36 absolute rounded-[50%]"
+            className="aboutImage2 "
           />
           <Image
             src={img3}
             alt="img3"
-            className="aboutImage3 md:w-40 w-20 md:h-36 h-20 rounded-[50%]"
+            className="aboutImage3 "
           />
         </div>
-        <div className="aboutTextParent md:px-80 px-5 text-[#202426] text-center space-y-5">
-          <h1 className=" font-semibold md:text-2xl">
+        <div className="aboutTextParent">
+          <h1 >
             With 1+ year of experience, I specialize in crafting intuitive,
             dynamic, and responsive user interfaces that deliver seamless
             digital experiences. With a deep understanding of modern web
@@ -43,7 +43,7 @@ function Page() {
             and frameworks like React and Next.js, I bring designs to life with
             clean, efficient, and maintainable code.
           </h1>
-          <h3 className="text-1xl">
+          <h3>
             I am adept at creating dynamic, visually appealing interfaces,
             implementing animations, and optimizing user experience. Throughout
             my experience, I have worked on various projects, including

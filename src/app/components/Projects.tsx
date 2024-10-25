@@ -9,62 +9,62 @@ import Link from "next/link";
 function Projects() {
   return (
     <section className="projectSection">
-      <h1 className="myProjectHead text-[#868381] text-center font-semibold pb-12">
+      <h1 className="myProjectHead ">
         MY NEW PROJECTS
       </h1>
       <div className="ProjectsGrid  ">
         <div className="project1">
-          <Link href="/country-explorer" className="space-y-5">
+          <Link href="/country-explorer">
             <Image
               src={countryProject}
               alt="Country Project"
-              className="ProjectImg shadow-2xl shadow-gray-400 hover:scale-105 transition-all duration-500"
+              className="ProjectImg "
             />
-            <h1 className="text-2xl font-serif ">The Country Explorer</h1>
+            <h1 >The Country Explorer</h1>
           </Link>
         </div>
 
         <div className="project2">
-          <Link href="/e-commerce" className="space-y-7">
+          <Link href="/e-commerce" >
             <Image
               src={ecommerce}
               alt="E-commerce"
-              className="ProjectImg shadow-2xl shadow-gray-400 hover:scale-105 transition-all duration-500"
+              className="ProjectImg "
             />
-            <h1 className="text-2xl font-serif">The E-commerce Web</h1>
+            <h1 >The E-commerce Web</h1>
           </Link>
         </div>
 
         <div className="project3">
-          <Link href="/expense-tracker" className="space-y-7">
+          <Link href="/expense-tracker" >
             <Image
               src={expenseTracker}
               alt="Expense Project"
-              className="ProjectImg shadow-2xl shadow-gray-400 hover:scale-105 transition-all duration-500"
+              className="ProjectImg "
             />
-            <h1 className="text-2xl font-serif">The Expense Tracker</h1>
+            <h1>The Expense Tracker</h1>
           </Link>
         </div>
 
         <div className="project4">
-          <Link href="/my-resume" className="space-y-7">
+          <Link href="/my-resume" >
             <Image
               src={staticResume}
               alt="My Resume"
-              className="ProjectImg shadow-2xl shadow-gray-400 hover:scale-105 transition-all duration-500"
+              className="ProjectImg "
             />
-            <h1 className="text-2xl font-serif">My Resume</h1>
+            <h1>My Resume</h1>
           </Link>
         </div>
 
         <div className="project5">
-          <Link href="/dynamic-resume" className="space-y-7">
+          <Link href="/dynamic-resume" >
             <Image
               src={dynamicResume}
               alt="Dynamic Resume"
-              className="ProjectImg shadow-2xl shadow-gray-400 hover:scale-105 transition-all duration-500"
+              className="ProjectImg "
             />
-            <h1 className="text-2xl font-serif">The Resume Generator</h1>
+            <h1>The Resume Generator</h1>
           </Link>
         </div>
       </div>

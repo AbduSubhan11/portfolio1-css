@@ -4,38 +4,38 @@ import Link from "next/link";
 function Page() {
   return (
     <div>
-      <Image src={expense} alt="expense" className="expenseTrackImage md:p-20 p-8 "></Image>
-      <div className="expenseTrackTextParent p-5">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">
+      <Image src={expense} alt="expense" className="expenseTrackImage  "></Image>
+      <div className="expenseTrackTextParent ">
+        <h1 >
           Expense Tracker
         </h1>
-        <p className="expenseTrackPara1 text-gray-600 mb-6">
+        <p className="expenseTrackPara1 ">
           Manage your daily expenses effortlessly with our Expense Tracker!
           Easily create, view, and organize your expenses in one place.
         </p>
 
-        <h2 className="expenseTrackFeaturHead -2xl font-semibold text-gray-800 mb-4">
+        <h2 className="expenseTrackFeaturHead ">
           Key Features
         </h2>
-        <ul className=" list-disc list-inside text-gray-600 mb-6">
-          <li className="mb-2">
+        <ul >
+          <li>
             <strong>Add Expenses:</strong> Enter the title, category, and amount
             of each expense and add it to the table.
           </li>
-          <li className="mb-2">
+          <li>
             <strong>Sort by Amount:</strong> Click on the amount column to sort
             your expenses in ascending or descending order.
           </li>
-          <li className="mb-2">
+          <li>
             <strong>Edit or Delete:</strong> Modify or remove an existing
             expense with a single click of the edit or delete buttons.
           </li>
         </ul>
 
-        <h2 className="expenseTrackHowwork text-2xl font-semibold text-gray-800 mb-4">
+        <h2 className="expenseTrackHowwork ">
           How it Works
         </h2>
-        <p className="expenseTrackPara2 text-gray-600 mb-4">
+        <p className="expenseTrackPara2 ">
           1. Fill out the form by entering the title, category, and amount of
           the expense.
           <br />
@@ -45,16 +45,16 @@ function Page() {
           record as needed.
         </p>
 
-        <h3 className="expenseTrackStart text-lg font-semibold text-gray-800 mb-4">
+        <h3 className="expenseTrackStart">
           Get Started Now
         </h3>
-        <p className="expenseTrackPara3 text-gray-600 mb-4">
+        <p className="expenseTrackPara3 ">
           Keep your spending in check and stay organized with our easy-to-use
           expense tracker! For more details or to start tracking your expenses,
           visit the platform{" "}
           <Link
             href="https://the-expense-tracker-pro.netlify.app/"
-            className="expenseTrackVisitLink text-blue-500 hover:underline font-bold"
+            className="expenseTrackVisitLink "
           >
             here
           </Link>

@@ -21,16 +21,16 @@ function NavBar() {
       <div
         className={`navLinkParent ${
           isHamburger
-            ?"hamburgerClickNavLink flex flex-col fixed right-0 top-0 h-fit w-52 px-16 py-28 space-y-5 border-2 bg-[#F4F4F4]"
-            : "hamburgerNotClick md:flex hidden"
+            ?"hamburgerClickNavLink "
+            : "hamburgerNotClick "
         }`}
       >
         <Link
           href="/"
           onClick={closeMenu}
-          className={`navLinks hover:underline underline-offset-4 ${
+          className={`navLinks ${
             pathname === "/"
-              ? "active text-red-500 underline underline-offset-4"
+              ? "active "
               : ""
           }`}
         >
@@ -39,9 +39,9 @@ function NavBar() {
         <Link
           href="/about"
           onClick={closeMenu}
-          className={`navLinks hover:underline underline-offset-4 ${
+          className={`navLinks ${
             pathname === "/about"
-              ? "active text-red-500 underline underline-offset-4"
+              ? "active "
               : ""
           }`}
         >
@@ -50,9 +50,9 @@ function NavBar() {
         <Link
           href="/contact"
           onClick={closeMenu}
-          className={`navLinks hover:underline underline-offset-4 ${
+          className={`navLinks  ${
             pathname === "/contact"
-              ? "active text-red-500 underline underline-offset-4"
+              ? "active"
               : ""
           }`}
         >
@@ -62,21 +62,21 @@ function NavBar() {
 
       {/* NAV CENTER HEADING */}
       <div className="NavHeading">
-        <h1 className="font-bold font-sans md:text-5xl text-3xl">
-          Subhan<span className="text-[#FF5A13]">.</span>
+        <h1 >
+          Subhan<span>.</span>
         </h1>
       </div>
 
       {/* SOCIAL LINKS AND NAV BUTTON */}
       <div
-        className={`socialLinksworkbuttonParent justify-center items-center md:space-x-5 ${
+        className={`socialLinksworkbuttonParent  ${
           isHamburger
-            ? "hamburgerClick flex flex-col fixed right-4 top-96 space-y-5"
-            : "hamburgerNotClick md:flex hidden"
+            ? "hamburgerClick "
+            : "hamburgerNotClick "
         }`}
       >
         {/* SOCIAL LINKS */}
-        <div className={`socialLinksParent flex space-x-3`}>
+        <div className={`socialLinksParent`}>
           {/* LINKEDIN ICON */}
           <Link href="/" className="socialIcon">
             <svg
@@ -135,24 +135,23 @@ function NavBar() {
       </div>
 
       {/* HAMBURGER */}
-      <div className="hamburgerParent md:hidden z-20">
+      <div className="hamburgerParent">
         <button
-          className="flex flex-col justify-between w-6 h-[18px] focus:outline-none"
           onClick={hamburHandler}
         >
           <span
-            className={` block h-[3px] w-full bg-black transition-transform duration-300 ease-in-out ${
-              isHamburger ? "hamburspan1 rotate-45 translate-y-2" : ""
+            className={` ${
+              isHamburger ? "hamburspan1 " : ""
             }`}
           ></span>
           <span
-            className={` block h-[3px] w-full bg-black transition-opacity duration-300 ease-in-out ${
+            className={` ${
               isHamburger ? "hamburspan2 " : ""
             }`}
           ></span>
           <span
-            className={` block h-[3px] w-full bg-black transition-transform duration-300 ease-in-out ${
-              isHamburger ? "hamburspan3 -rotate-45 -translate-y-2" : ""
+            className={` ${
+              isHamburger ? "hamburspan3 " : ""
             }`}
           ></span>
         </button>

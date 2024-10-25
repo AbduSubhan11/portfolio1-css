@@ -3,12 +3,12 @@ import staticResume from "../../../public/Images/static.png"
 function page() {
   return (
     <div>
-        <Image src={staticResume} alt="Myresume" className="myResumeImage md:p-20 p-8 "></Image>
-      <div className="myResumeTextParent p-5">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">
+        <Image src={staticResume} alt="Myresume" className="myResumeImage"></Image>
+      <div className="myResumeTextParent ">
+        <h1 >
           Frontend Developer
         </h1>
-        <p className="myResumeTextPara1 text-gray-600 mb-6">
+        <p className="myResumeTextPara1 ">
           Welcome to my resume! I am a passionate and skilled frontend developer
           with hands-on experience in building responsive, user-friendly
           websites and web applications. Whether it&apos;s bringing a creative design
@@ -16,39 +16,39 @@ function page() {
           to delivering high-quality solutions.
         </p>
 
-        <h2 className="myResumeFeaturHead text-2xl font-semibold text-gray-800 mb-4">
+        <h2 className="myResumeFeaturHead ">
           Key Skills
         </h2>
-        <ul className="list-disc list-inside text-gray-600 mb-6">
-          <li className="mb-2">
+        <ul>
+          <li >
             HTML, CSS, JavaScript, React, and Tailwind CSS
           </li>
-          <li className="mb-2">
+          <li >
             Responsive Design and Cross-Browser Compatibility
           </li>
-          <li className="mb-2">Performance Optimization and Accessibility</li>
-          <li className="mb-2">Version Control (Git, GitHub)</li>
+          <li >Performance Optimization and Accessibility</li>
+          <li >Version Control (Git, GitHub)</li>
         </ul>
 
-        <h3 className="myResumeFreelanceHead text-lg font-semibold text-gray-800 mb-4">
+        <h3 className="myResumeFreelanceHead ">
           Freelance Opportunities
         </h3>
-        <p className="myResumeTextPara2 1text-gray-600 mb-4">
+        <p className="myResumeTextPara2 ">
           I am available to work as a freelancer for frontend development
           projects. If you&apos;re looking to hire a talented and flexible developer
           for your project, feel free to get in touch with me.
         </p>
 
-        <p className="myResumePara3 text-gray-600">
+        <p className="myResumePara3 ">
           Let&apos;s work together to bring your vision to life with modern, scalable
           frontend technologies.
         </p>
 
-        <div className="myResumeStart mt-6">
+        <div className="myResumeStart">
           Visit the platform {""}
           <a
             href="https://subhan-static-resume.netlify.app/"
-            className="myResumeVisitLink text-blue-500 hover:underline font-bold"
+            className="myResumeVisitLink "
           >
             Here
           </a>
