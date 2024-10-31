@@ -17,6 +17,7 @@ body {
   font-weight: 700;
   font-size: 6vw;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  animation: heroH1 1s ease-in;
 }
 .heroesDevloper {
   color: #ff5a13;
@@ -25,10 +26,33 @@ body {
   padding: 20px 200px;
   font-size: 1vw;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  animation: heorPara1 2s ease-in-out;
 }
 .heroesScroll {
   color: #bfb2b5;
 }
+
+@keyframes heroH1 {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes heorPara1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 @media (max-width: 1359px) {
   .homeSection {
     margin-top: 50px;
@@ -40,5 +64,4 @@ body {
     padding: 20px 25px;
     font-size: 4vw;
   }
-
 }
