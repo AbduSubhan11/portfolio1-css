@@ -1,48 +1,46 @@
 import Link from "next/link";
-import styles from "../dynamic-resume/dynamicResm.module.css"
+import styles from "../dynamic-resume/dynamicResm.module.css";
 import dynamic from "../../../public/Images/dynamic.png";
 import Image from "next/image";
 
 function page() {
   return (
     <div>
-      <Image src={dynamic} alt="dynamic-resume" className={styles.dynamicResumeImage}></Image>
+      <Image
+        src={dynamic}
+        alt="dynamic-resume"
+        className={styles.dynamicResumeImage}
+      ></Image>
       <div className={styles.dynamicResumeTextParent}>
-        <h1 >
-          Dynamic Resume Builder
-        </h1>
+        <h1>Dynamic Resume Builder</h1>
         <p className={styles.dynamicResumePara1}>
           Create your personalized resume effortlessly! Simply fill out the form
           with your personal information, skills, and experience, and instantly
           generate a professionally designed resume tailored to your input.
         </p>
 
-        <h2 className={styles.dynamicResumeFeaturHead}>
-          Key Features
-        </h2>
-        <ul >
-          <li >
+        <h2 className={styles.dynamicResumeFeaturHead}>Key Features</h2>
+        <ul>
+          <li>
             <strong>Form-Based Input:</strong> Users can enter their personal
             details, skills, education, and work experience.
           </li>
-          <li >
+          <li>
             <strong>Real-Time Preview:</strong> See your resume update as you
             fill out the form, ensuring everything looks perfect before
             downloading.
           </li>
-          <li >
+          <li>
             <strong>Customization Options:</strong> Choose from a range of
             templates, colors, and layouts to personalize your resume.
           </li>
-          <li >
+          <li>
             <strong>Download and Share:</strong> Generate a downloadable PDF of
             your resume, ready to be shared with employers or recruiters.
           </li>
         </ul>
 
-        <h3 className={styles.dynamicResumeHowWork}>
-          How It Works
-        </h3>
+        <h3 className={styles.dynamicResumeHowWork}>How It Works</h3>
         <p className={styles.dynamicResumePara2}>
           1. Fill out the form with your personal details (name, contact info,
           skills, work experience, education).
@@ -65,7 +63,7 @@ function page() {
         </p>
 
         <div className={styles.dynamicResumeStart}>
-            visit platform
+          visit platform
           <Link
             href="https://subhan-dynamic-resume.netlify.app/"
             className={styles.dynamicResumeVisitLink}

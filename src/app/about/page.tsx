@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../about/about.module.css"
+import styles from "../about/about.module.css";
 import img1 from "../../../public/Images/img1.jpg";
 import img2 from "../../../public/Images/Img2.jpg";
 import img3 from "../../../public/Images/img3.jpg";
@@ -7,9 +7,9 @@ import Skill from "../components/Skill/Skill";
 
 function Page() {
   return (
-    <section >
-      <div className={styles.aboutUpper }>
-        <h1 >
+    <section>
+      <div className={styles.aboutUpper}>
+        <h1>
           My name is Subhan, I’m a Frontend Developer. I create engaging,
           responsive websites and web applications, ensuring seamless user
           experiences across all devices.
@@ -18,25 +18,13 @@ function Page() {
 
       {/* 3 PICS AND TEXT */}
       <div>
-        <div className={styles.aboutImageParent }>
-          <Image
-            src={img1}
-            alt="img1"
-            className={styles.aboutImage1}
-          />
-          <Image
-            src={img2}
-            alt="img2"
-            className={styles.aboutImage2}
-          />
-          <Image
-            src={img3}
-            alt="img3"
-            className={styles.aboutImage3}
-          />
+        <div className={styles.aboutImageParent}>
+          <Image src={img1} alt="img1" className={styles.aboutImage1} />
+          <Image src={img2} alt="img2" className={styles.aboutImage2} />
+          <Image src={img3} alt="img3" className={styles.aboutImage3} />
         </div>
         <div className={styles.aboutTextParent}>
-          <h1 >
+          <h1>
             With 1+ year of experience, I specialize in crafting intuitive,
             dynamic, and responsive user interfaces that deliver seamless
             digital experiences. With a deep understanding of modern web

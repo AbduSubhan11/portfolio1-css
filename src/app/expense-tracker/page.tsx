@@ -1,24 +1,24 @@
 import Image from "next/image";
-import styles from "./expense.module.css"
-import expense from "../../../public/Images/expense.png"
+import styles from "./expense.module.css";
+import expense from "../../../public/Images/expense.png";
 import Link from "next/link";
 function Page() {
   return (
     <div>
-      <Image src={expense} alt="expense" className={styles.expenseTrackImage}></Image>
+      <Image
+        src={expense}
+        alt="expense"
+        className={styles.expenseTrackImage}
+      ></Image>
       <div className={styles.expenseTrackTextParent}>
-        <h1 >
-          Expense Tracker
-        </h1>
+        <h1>Expense Tracker</h1>
         <p className={styles.expenseTrackPara1}>
           Manage your daily expenses effortlessly with our Expense Tracker!
           Easily create, view, and organize your expenses in one place.
         </p>
 
-        <h2 className={styles.expenseTrackFeaturHead}>
-          Key Features
-        </h2>
-        <ul >
+        <h2 className={styles.expenseTrackFeaturHead}>Key Features</h2>
+        <ul>
           <li>
             <strong>Add Expenses:</strong> Enter the title, category, and amount
             of each expense and add it to the table.
@@ -33,9 +33,7 @@ function Page() {
           </li>
         </ul>
 
-        <h2 className={styles.expenseTrackHowwork}>
-          How it Works
-        </h2>
+        <h2 className={styles.expenseTrackHowwork}>How it Works</h2>
         <p className={styles.expenseTrackPara2}>
           1. Fill out the form by entering the title, category, and amount of
           the expense.
@@ -46,9 +44,7 @@ function Page() {
           record as needed.
         </p>
 
-        <h3 className={styles.expenseTrackStart}>
-          Get Started Now
-        </h3>
+        <h3 className={styles.expenseTrackStart}>Get Started Now</h3>
         <p className={styles.expenseTrackPara3}>
           Keep your spending in check and stay organized with our easy-to-use
           expense tracker! For more details or to start tracking your expenses,

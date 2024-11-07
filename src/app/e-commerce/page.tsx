@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./e-commerce.module.css"
+import styles from "./e-commerce.module.css";
 import ecommerce from "../../../public/Images/e-commerce.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,20 +7,20 @@ import Link from "next/link";
 function Page() {
   return (
     <div>
-      <Image src={ecommerce} alt="ecommerce" className={styles.ecommerceImage} />
+      <Image
+        src={ecommerce}
+        alt="ecommerce"
+        className={styles.ecommerceImage}
+      />
       <div className={styles.ecommerceTextParent}>
-        <h1>
-          E-Commerce Platform
-        </h1>
+        <h1>E-Commerce Platform</h1>
         <p className={styles.ecommercePara1}>
           Experience seamless online shopping with our E-Commerce Platform!
           Browse, add to cart, and purchase your favorite items effortlessly.
         </p>
 
-        <h2 className={styles.ecommerceFeaturHead}>
-          Key Features
-        </h2>
-        <ul >
+        <h2 className={styles.ecommerceFeaturHead}>Key Features</h2>
+        <ul>
           <li>
             <strong>Shopping Cart:</strong> Easily add items to your cart and
             review your selections before checkout.
@@ -39,9 +39,7 @@ function Page() {
           </li>
         </ul>
 
-        <h2 className={styles.ecommerceHowWork}>
-          How it Works
-        </h2>
+        <h2 className={styles.ecommerceHowWork}>How it Works</h2>
         <p className={styles.ecommercePara2}>
           1. Browse through our wide range of products and add your desired
           items to the cart.
@@ -57,8 +55,8 @@ function Page() {
         </h3>
         <p className={styles.ecommercePara3}>
           Keep your spending in check and stay organized with our easy-to-use
-          E-commerce plateform! For more details or to start shopping with Capital.Shop,
-          visit the platform{" "}
+          E-commerce plateform! For more details or to start shopping with
+          Capital.Shop, visit the platform{" "}
           <Link
             href="https://the-capitalshop.netlify.app/"
             className={styles.ecommerceVisitLink}
