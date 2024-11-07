@@ -3,6 +3,9 @@ import styles from "../contact/contact.module.css";
 function Page() {
   return (
     <section className={styles.contactParent}>
+      <h1 className={`${styles.contactHeading}`}>
+        CONTACT
+      </h1>
       <form action="https://api.web3forms.com/submit" method="POST">
         <div className={styles.NameEmailinputParent}>
           <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
