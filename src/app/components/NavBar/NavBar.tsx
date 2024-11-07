@@ -29,21 +29,36 @@ function NavBar() {
         <Link
           href="/"
           onClick={closeMenu}
-          className={`${styles.navLinks} ${pathname === "/" ? `${styles.active}` : ""}`}
+          className={`${styles.navLinks} ${
+            pathname === "/" ? `${styles.active}` : ""
+          }`}
         >
           Work
         </Link>
         <Link
           href="/about"
           onClick={closeMenu}
-          className={`${styles.navLinks} ${pathname === "/about" ?`${styles.active}` : ""}`}
+          className={`${styles.navLinks} ${
+            pathname === "/about" ? `${styles.active}` : ""
+          }`}
         >
           About
         </Link>
         <Link
+          href="/services"
+          onClick={closeMenu}
+          className={`${styles.navLinks} ${
+            pathname === "/services" ? `${styles.active}` : ""
+          }`}
+        >
+          Services
+        </Link>
+        <Link
           href="/contact"
           onClick={closeMenu}
-          className={`${styles.navLinks}  ${pathname === "/contact" ? `${styles.active}`: ""}`}
+          className={`${styles.navLinks}  ${
+            pathname === "/contact" ? `${styles.active}` : ""
+          }`}
         >
           Contact
         </Link>
@@ -59,7 +74,9 @@ function NavBar() {
       {/* SOCIAL LINKS AND NAV BUTTON */}
       <div
         className={`${styles.socialLinksworkbuttonParent}  ${
-          isHamburger ? `${styles.hamburgerClick} ` : `${styles.hamburgerNotClick} `
+          isHamburger
+            ? `${styles.hamburgerClick} `
+            : `${styles.hamburgerNotClick} `
         }`}
       >
         {/* SOCIAL LINKS */}
@@ -96,7 +113,10 @@ function NavBar() {
           </Link>
 
           {/* GITHUB ICON */}
-          <Link href="https://github.com/AbduSubhan11" className={styles.socialIcon}>
+          <Link
+            href="https://github.com/AbduSubhan11"
+            className={styles.socialIcon}
+          >
             <svg
               width="24"
               height="24"
@@ -115,8 +135,14 @@ function NavBar() {
         </div>
 
         {/* NAV WORK BUTTON */}
-        <Link href="/contact" onClick={closeMenu} className={`${styles.workButton}`}>
-          <span className={`${styles.workbtntext}`}>Let&apos;s Work Together</span>
+        <Link
+          href="/contact"
+          onClick={closeMenu}
+          className={`${styles.workButton}`}
+        >
+          <span className={`${styles.workbtntext}`}>
+            Let&apos;s Work Together
+          </span>
           <span className={`${styles.workbtnbg}`}></span>
         </Link>
       </div>
@@ -124,9 +150,15 @@ function NavBar() {
       {/* HAMBURGER */}
       <div className={`${styles.hamburgerParent}`}>
         <button onClick={hamburHandler}>
-          <span className={` ${isHamburger ? `${styles.hamburspan1}` : ""}`}></span>
-          <span className={` ${isHamburger ? `${styles.hamburspan2}` : ""}`}></span>
-          <span className={` ${isHamburger ? `${styles.hamburspan3}` : ""}`}></span>
+          <span
+            className={` ${isHamburger ? `${styles.hamburspan1}` : ""}`}
+          ></span>
+          <span
+            className={` ${isHamburger ? `${styles.hamburspan2}` : ""}`}
+          ></span>
+          <span
+            className={` ${isHamburger ? `${styles.hamburspan3}` : ""}`}
+          ></span>
         </button>
       </div>
     </nav>

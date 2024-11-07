@@ -16,8 +16,20 @@ function Footer() {
               Work
             </Link>
             <Link
-              href="/contact"
+              href="/about"
               className={styles.PagesLink2}
+            >
+              About
+            </Link>
+            <Link
+              href="/services"
+              className={styles.PagesLink3}
+            >
+              Services
+            </Link>
+            <Link
+              href="/contact"
+              className={styles.PagesLink4}
             >
               Contact
             </Link>
