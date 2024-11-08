@@ -66,6 +66,7 @@ function page() {
           visit platform
           <Link
             href="https://subhan-dynamic-resume.netlify.app/"
+            target="_blank"
             className={styles.dynamicResumeVisitLink}
           >
             &nbsp;Here

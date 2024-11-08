@@ -51,9 +51,10 @@ function Page() {
           visit the platform{" "}
           <Link
             href="https://the-expense-tracker-pro.netlify.app/"
+            target="_blank"
             className={styles.expenseTrackVisitLink}
           >
-            here
+            Here
           </Link>
           .
         </p>

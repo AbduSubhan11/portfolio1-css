@@ -45,6 +45,7 @@ function page() {
           Visit the platform {""}
           <a
             href="https://subhan-static-resume.netlify.app/"
+            target="_blank"
             className={styles.myResumeVisitLink}
           >
             Here

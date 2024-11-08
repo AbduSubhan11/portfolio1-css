@@ -59,9 +59,10 @@ function Page() {
           Capital.Shop, visit the platform{" "}
           <Link
             href="https://the-capitalshop.netlify.app/"
+            target="_blank"
             className={styles.ecommerceVisitLink}
           >
-            here
+            Here
           </Link>
           .
         </p>
